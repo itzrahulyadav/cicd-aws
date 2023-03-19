@@ -76,7 +76,7 @@ artifacts:
 
 - launch an instance
 - give permission to s3readonlyaccess
-- install codedeploy agent using the following steps
+##### 1. install codedeploy agent using the following steps
 
 ```
 sudo yum update -y
@@ -91,6 +91,8 @@ sudo ./install auto
 sudo service codedeploy-agent status
 
 ```
+
+#### 2. creating the deployment group
 
 
 
