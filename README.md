@@ -72,5 +72,25 @@ artifacts:
 
 - Note:There should be a bucket created as shown in post_build command.
 
+### CodeDeploy
+
+- launch an instance
+- give permission to s3readonlyaccess
+- install codedeploy agent using the following steps
+
+```
+sudo yum update -y
+sudo yum install ruby 
+sudo yum install wget
+wget https://bucket-name.s3.region-identifier.amazonaws.com/latest/install
+# replace bucket-name with aws-codedeploy-ap-south-1 and region-identifier with ap-south-1
+# the code for ap-south-1 region will be
+# wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+sudo service codedeploy-agent status
+
+```
+
 
 
