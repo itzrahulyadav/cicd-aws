@@ -25,12 +25,13 @@ phases:
 
 
 ```
-
+- create a ecr repo with the name that will be used for IMAGE_REPO_NAME
 - Add the environment variables in the environment option of the project
 - click on edit --> click on environment --> add env variables
 - To allow to run docker commands follow the steps:
 -  click on edit --> click on environment --> add env variables -->click on override image and select the checkbox called privilaged.
 - make sure the role that the codebuild is using has the ec2containerregistryfullaccess policy attached to it.
+- 
 ### Pushing the code to s3
 - To push the artifacts to s3
 - use the following buildspec file
